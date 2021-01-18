@@ -140,7 +140,7 @@ nav a{
 }
 
 .about{
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .about .about-image{
@@ -192,7 +192,7 @@ nav a{
 /* Flex layout */
 
 .flex-container{
-  border: 1px solid blue;
+  border: 1px solid transparent;
   clear: both;
 }
 .row{
@@ -227,6 +227,87 @@ nav a{
   width: 73%;
 }
 
+/* Article cards */
+
+.main-article-image{
+  max-width: 100%;
+}
+
+.article-cards{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6em;
+}
+
+.main-article{
+  width: 70%;
+  text-align: left;
+}
+
+.side-article{
+  width: 25%;
+}
+
+.article-date{
+  color: #707070;
+  font-size: 0.875rem;
+  margin-top: 2em;
+}
+
+.article-main-title{
+  color: #1792D2;
+  margin: 1em 0;
+}
+
+.article-text{
+  font-size: 0.9rem;
+  color: #707070;
+  margin: 1em 0;
+}
+
+.article-continue-reading{
+  text-transform: uppercase;
+  color: #1792D2;
+  font-weight: 600;
+}
+
+.article-divider{
+  background-color: #707070;
+  height: 1px;
+  width: 100%;
+  margin: 1em 0;
+}
+
+.article-list-item{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.article-item-card-image{
+  width: 25%;
+}
+
+.article-item-description{
+  width: 70%;
+}
+
+.article-profile{
+  border: 10px solid #D3D3D3;
+  padding: 2em;
+  margin-bottom: 4em;
+}
+
+.article-side-title{
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.article-text{
+  font-weight: 400;
+  text-align: left;
+}
+
 @media  (max-width:600px){
 
   body{
@@ -245,10 +326,6 @@ nav a{
 
   .row{
     flex-direction: column;
-  }
-
-  .flex-container .container{
-    width: 90%;
   }
 
   .col-1, .col-2, .col-3{
@@ -272,11 +349,35 @@ nav a{
     float: none;
   }
 
-  .about .container{
+  .container{
     width: 90%;
   }
 
   nav{
     display: none;
+  }
+
+  .article-cards{
+    flex-direction: column;
+  }
+
+  .main-article{
+    width: 100%;
+  }
+
+  .side-article{
+    width: 100%;
+  }
+
+  .article-list-item{
+    flex-direction: column;
+  }
+  
+  .article-item-card-image{
+    width: 100%;
+  }
+  
+  .article-item-description{
+    width: 100%;
   }
 }

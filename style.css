@@ -12,10 +12,6 @@ body{
   --e1-color:#333;
 }
 
-section{
-  /* border: 2px solid red; */
-}
-
 h1,h2,h3,h4,a,p{
   color: var(--e1-color);
 }
@@ -139,10 +135,6 @@ nav a{
   background-color: #eb7620;
 }
 
-.about{
-  /* border: 1px solid red; */
-}
-
 .about .about-image{
   width: 45%;
   float: left;
@@ -233,6 +225,12 @@ nav a{
   max-width: 100%;
 }
 
+.side-article-image{
+  width: 100%;
+  object-fit: cover;
+  min-height: 200px;
+}
+
 .article-cards{
   display: flex;
   justify-content: space-between;
@@ -250,8 +248,9 @@ nav a{
 
 .article-date{
   color: #707070;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   margin-top: 2em;
+  font-weight: 300;
 }
 
 .article-main-title{
@@ -275,7 +274,7 @@ nav a{
   background-color: #707070;
   height: 1px;
   width: 100%;
-  margin: 1em 0;
+  margin: 2em 0;
 }
 
 .article-list-item{

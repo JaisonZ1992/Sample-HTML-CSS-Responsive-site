@@ -65,7 +65,7 @@ i{
 /* Header Section */
 
 nav{
-  height: 6.5em;
+  min-height: 6.5em;
 }
 
 nav h2{
@@ -350,10 +350,6 @@ nav a{
 
   .container{
     width: 90%;
-  }
-
-  nav{
-    display: none;
   }
 
   .article-cards{
